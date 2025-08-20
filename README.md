@@ -26,7 +26,7 @@ A universal neural network latent upscaler that supports **SD1.5**, **SDXL**, **
 ### Method 1: Git Clone (Recommended)
 ```bash
 cd ComfyUI/custom_nodes
-git clone https://github.com/yourusername/wan_nn_latent.git
+git clone https://github.com/DenRakEiw/WAN_NN_Latent_Upscale
 ```
 
 ### Method 2: Manual Download
@@ -172,7 +172,7 @@ force_reload = True  # Reloads model on every execution
 
 ### Getting Help:
 1. 📖 Check this README and troubleshooting section
-2. 🐛 [Open an issue](https://github.com/yourusername/wan_nn_latent/issues) on GitHub
+2. 🐛 [Open an issue](https://github.com/DenRakEiw/WAN_NN_Latent_Upscale/issues) on GitHub
 3. 💬 Join the [ComfyUI Discord](https://discord.gg/comfyui) community
 4. 📧 Contact: [your-email@example.com]
 
@@ -212,9 +212,9 @@ Our contribution extends this foundation with universal model support, improved 
 ## 🔗 Links
 
 - 🏠 [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
-- 📚 [Documentation](https://github.com/yourusername/wan_nn_latent/wiki)
-- 🐛 [Issues](https://github.com/yourusername/wan_nn_latent/issues)
-- 💬 [Discussions](https://github.com/yourusername/wan_nn_latent/discussions)
+- 📚 [Documentation](https://github.com/DenRakEiw/WAN_NN_Latent_Upscale/wiki)
+- 🐛 [Issues](https://github.com/DenRakEiw/WAN_NN_Latent_Upscale/issues)
+- 💬 [Discussions](https://github.com/DenRakEiw/WAN_NN_Latent_Upscale/discussions)
 
 ---
 
@@ -222,8 +222,8 @@ Our contribution extends this foundation with universal model support, improved 
 
 **🚀 Made with ❤️ for the ComfyUI community**
 
-[![Star this repo](https://img.shields.io/github/stars/yourusername/wan_nn_latent?style=social)](https://github.com/yourusername/wan_nn_latent)
-[![Follow](https://img.shields.io/github/followers/yourusername?style=social)](https://github.com/yourusername)
+[![Star this repo](https://img.shields.io/github/stars/DenRakEiw/WAN_NN_Latent_Upscale?style=social)](https://github.com/DenRakEiw/WAN_NN_Latent_Upscale)
+[![Follow](https://img.shields.io/github/followers/DenRakEiw?style=social)](https://github.com/DenRakEiw)
 
 *If this project helps you, please consider giving it a ⭐!*
 
