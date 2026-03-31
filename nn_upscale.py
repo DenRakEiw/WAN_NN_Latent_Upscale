@@ -164,7 +164,8 @@ class UniversalNNLatentUpscale:
                 logger.info(f"Squeezed 5D latent to 4D: {samples.shape}")
             else:
                 # If time dimension > 1, process each frame separately
-                samples = samples.view(B * T, C, H, W)
+                samples = samples.reshape(B * T, C, H, W)
+                # samples = samples.view(B * T, C, H, W) changeByAB
                 logger.info(f"Reshaped 5D latent to 4D: {samples.shape}")
         elif len(samples.shape) == 3:
             # Add batch dimension if missing
@@ -190,7 +191,8 @@ class UniversalNNLatentUpscale:
                     if T == 1:
                         upscaled = upscaled.unsqueeze(2)  # Add back time dimension
                     else:
-                        upscaled = upscaled.view(B, C, T, int(H * upscale), int(W * upscale))
+                        upscaled = upscaled.reshape(B, C, T, int(H * upscale), int(W * upscale))
+                        # upscaled = upscaled.view(B, C, T, int(H * upscale), int(W * upscale)) changeByAB
                 elif len(original_shape) == 3:
                     upscaled = upscaled.squeeze(0)
 
@@ -219,7 +221,8 @@ class UniversalNNLatentUpscale:
             if T == 1:
                 latent_out = latent_out.unsqueeze(2)  # Add back time dimension
             else:
-                latent_out = latent_out.view(B, C, T, int(H * upscale), int(W * upscale))
+                latent_out = latent_out.reshape(B, C, T, int(H * upscale), int(W * upscale))
+                # latent_out = latent_out.view(B, C, T, int(H * upscale), int(W * upscale)) changeByAB
         elif len(original_shape) == 3:
             latent_out = latent_out.squeeze(0)
 
